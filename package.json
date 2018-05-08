@@ -1,0 +1,36 @@
+{
+  "name": "qs-fe",
+  "version": "1.0.0",
+  "description": "a queuing system",
+  "main": "index.js",
+  "scripts": {
+    "dev": "set WEBPACK_ENV=dev && webpack-dev-server --inline --port 8088",
+    "dist": "set WEBPACK_ENV=online && webpack -p",
+    "webpack": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/YouJianDianPu/QS-fe.git"
+  },
+  "author": "youjiandianpu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/YouJianDianPu/QS-fe/issues"
+  },
+  "homepage": "https://github.com/YouJianDianPu/QS-fe#readme",
+  "devDependencies": {
+    "css-loader": "^0.28.9",
+    "extract-text-webpack-plugin": "^1.0.1",
+    "file-loader": "^0.11.2",
+    "html-loader": "^0.5.5",
+    "html-webpack-plugin": "^2.30.1",
+    "style-loader": "^0.20.2",
+    "url-loader": "^0.6.2",
+    "webpack": "^1.15.0",
+    "webpack-dev-server": "^2.11.1"
+  },
+  "dependencies": {
+    "font-awesome": "^4.7.0",
+    "hogan": "^1.0.2"
+  }
+}

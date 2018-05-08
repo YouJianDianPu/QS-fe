@@ -1,0 +1,88 @@
+/*
+* @Author: YouJDP
+* @Date:   2018-02-23 23:16:59
+* @Last Modified by:   YouJDP
+* @Last Modified time: 2018-03-02 15:18:31
+*/
+/*css reset*/
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	background: #f6f6f6;
+	font: 12px/1.5 tahoma, arial, Microsoft YaHei, sans-serif;
+}
+li{
+	list-style: none;
+}
+img{
+	display: block;
+	border: none;
+}
+label{
+	cursor: pointer;
+}
+input[type='checkbox']{
+	cursor: pointer;
+}
+
+/*布局*/
+.w{
+	width: 90%;
+	margin: 0 auto;
+	position: relative;
+	overflow: hidden;
+}
+
+/*全局通用样式*/
+/*隐藏类*/
+.hide{
+	display: none;
+}
+/*超链接*/
+.link{
+	color: #999;
+	cursor: pointer;
+	text-decoration: none;
+}
+.link:hover{
+	color: #e80012;
+}
+.link-text{
+	color: #999;
+	text-decoration: none;
+}
+/*按钮*/
+.btn{
+	display: inline-block;
+	padding: 0 20px;
+	height: 40px;
+	line-height: 40px;
+	vertical-align: middle;
+	border: none;
+	background: #c60023;
+	font-size: 17px;
+	font-weight: bold;
+	color: #fff;
+	outline: none;
+	cursor: pointer;
+	text-decoration: none;
+}
+.btn-mini{
+	height: 25px;
+	line-height: 25px;
+	font-size: 12px;
+	padding: 0 10px;
+}
+/*加载*/
+.loading{
+	margin: 10px auto;
+	display: block;
+	width: 100%;
+	height: 100%;
+	border: 1px solid #ddd;
+	border-radius: 5px;
+	background: url(../../images/icon/loading.gif) no-repeat;
+	opacity: 0.6;
+}

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head> 
+        <%= require('html-loader!./layout/head-common.html')  %>
+        <title>饭堂自助系统</title>
+    </head>
+    <body>
+        <%= require('html-loader!./layout/nav.html')  %>
+        <%= require('html-loader!./layout/header.html')  %>
+        <div class="w">
+            <ul class="keywords-list">
+                <li class="keywords-item">
+                    <a class="link" target="_blank" href="./list.html?keyword=汉堡">汉堡</a>
+                    <a class="link" target="_blank" href="./list.html?keyword=鸡肉卷">鸡肉卷</a>
+                    <a class="link" target="_blank" href="./list.html?keyword=咖啡">咖啡</a>
+                    <a class="link" target="_blank" href="./list.html?keyword=可乐">可乐</a>
+                    <a class="link" target="_blank" href="./list.html?keyword=奶茶">奶茶</a>
+                    <a class="link" target="_blank" href="./list.html?keyword=果汁">果汁</a>
+                </li>
+                <li class="keywords-item">
+                    <a class="link" target="_blank" href="./list.html?keyword=包子">包子</a>
+                    <a class="link" target="_blank" href="./list.html?keyword=蒸饺">蒸饺</a>
+                    <a class="link" target="_blank" href="./list.html?keyword=麻辣烫">麻辣烫</a>
+                    <a class="link" target="_blank" href="./list.html?keyword=麻辣香锅">麻辣香锅</a>
+                </li>
+            </ul>
+            <div class="banner-con">
+                <div class="loading"></div>
+            </div>
+        </div>
+        <div class="w">
+            <div class="floor-wrap">
+                <h1 class="floor-title">F1 堡卷</h1>
+                <ul class="floor-list">
+                    <li class="floor-item">
+                        <a href="./list.html?categoryId=100006">
+                            <span class="floor-text">汉堡</span>
+                            <img class="floor-img" src="<%= require('../images/floor/floor1-01.jpg') %>" alt="汉堡" />
+                        </a>
+                    </li>
+                    <li class="floor-item">
+                        <a href="./list.html?categoryId=100007">
+                            <span class="floor-text">鸡肉卷</span>
+                            <img class="floor-img" src="<%= require('../images/floor/floor1-03.jpg') %>" alt="鸡肉卷" />
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="floor-wrap">
+                <h1 class="floor-title">F2 酷爽饮品</h1>
+                <ul class="floor-list">
+                    <li class="floor-item">
+                        <a href="./list.html?categoryId=100010">
+                            <span class="floor-text">咖啡</span>
+                            <img class="floor-img" src="<%= require('../images/floor/floor2-01.jpg') %>" alt="咖啡" />
+                        </a>
+                    </li>
+                    <li class="floor-item">
+                        <a href="./list.html?categoryId=100011">
+                            <span class="floor-text">可乐</span>
+                            <img class="floor-img" src="<%= require('../images/floor/floor2-02.jpg') %>" alt="可乐" />
+                        </a>
+                    </li>
+                    <li class="floor-item">
+                        <a href="./list.html?categoryId=100012">
+                            <span class="floor-text">奶茶</span>
+                            <img class="floor-img" src="<%= require('../images/floor/floor2-03.jpg') %>" alt="奶茶" />
+                        </a>
+                    </li>
+                    <li class="floor-item">
+                        <a href="./list.html?categoryId=100013">
+                            <span class="floor-text">果汁</span>
+                            <img class="floor-img" src="<%= require('../images/floor/floor2-04.jpg') %>" alt="果汁" />
+                        </a>
+                    </li>
+                    
+                </ul>
+            </div>
+            <div class="floor-wrap">
+                <h1 class="floor-title">F3 风味小吃</h1>
+                <ul class="floor-list">
+                    <li class="floor-item">
+                        <a href="./list.html?categoryId=100014">
+                            <span class="floor-text">手抓饼</span>
+                            <img class="floor-img" src="<%= require('../images/floor/floor3-01.jpg') %>" alt="手抓饼" />
+                        </a>
+                    </li>
+                    <li class="floor-item">
+                        <a href="./list.html?categoryId=100015">
+                            <span class="floor-text">汤面</span>
+                            <img class="floor-img" src="<%= require('../images/floor/floor3-02.jpg') %>" alt="汤面" />
+                        </a>
+                    </li>
+                    <li class="floor-item">
+                        <a href="./list.html?categoryId=100016">
+                            <span class="floor-text">包子蒸饺</span>
+                            <img class="floor-img" src="<%= require('../images/floor/floor3-03.jpg') %>" alt="包子蒸饺" />
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="floor-wrap">
+                <h1 class="floor-title">F4 麻辣风味</h1>
+                <ul class="floor-list">
+                    <li class="floor-item">
+                        <a href="./list.html?categoryId=100018">
+                            <span class="floor-text">麻辣烫</span>
+                            <img class="floor-img" src="<%= require('../images/floor/floor4-01.jpg') %>" alt="麻辣烫" />
+                        </a>
+                    </li>
+                    <li class="floor-item">
+                        <a href="./list.html?categoryId=100019">
+                            <span class="floor-text">麻辣香锅</span>
+                            <img class="floor-img" src="<%= require('../images/floor/floor4-02.jpg') %>" alt="麻辣香锅" />
+                        </a>
+                    </li>
+                   
+                </ul>
+            </div>
+           
+        </div>
+        <%= require('html-loader!./layout/footer.html')  %>
+    </body>
+</html>
